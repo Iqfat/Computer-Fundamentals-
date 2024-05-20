@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> PowerBI and its significance within the business sector</title>
         <style>
             body {
@@ -12,15 +13,21 @@
             padding: 20px;
             margin: 20px;
         }
-            .img
-            {
+            .img {
                  float: right;
                  width: 40%;
                  height: auto;
                  margin: 15px;
                  margin-right: 5px;
                  border-radius: 20px;
-                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                 box-shadow: 0 0 10px grey;
+            }
+            #myHeader {
+                background-color: antiquewhite;
+                color: black;
+                padding: 10px;
+                text-align: center;
+
             }
             h2 {
             color: darkslategray;
@@ -30,31 +37,80 @@
             .rectangle {
               width: 750px;
               height: 400px;
-              background-color: #00ba06;
-              color: white;
+              background-color: antiquewhite;
+              color: black;
               display: flex;
-              justify-content: left;
-             align-items: left;
-             text-align: left;
+              justify-content: right;
+             align-items: center;
+             text-align: center;
              border-radius: 15px;
-             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+             box-shadow: 0 4px 8px grey;
             }
-            .list-of-benifits {
-            padding-left: -200px;
-            margin-top: 0;
-            }
-
             .list-of-benifits li {
              margin-bottom: 5px;
             }
+            @media only screen and (max-width: 620px) {
+            .image, .rectangle, .list-of-benifits{ width:100%}
+          }
+          nav{
+           background-color: antiquewhite;
+           padding: 25px;
+           }
+          nav li {
+          display:inline;
+          margin-right: 20px;
+        }
+          #header2 {
+            background-color:antiquewhite;
+                color: black;
+                padding: 10px;
+                text-align: center;
+          }
+          .pic {
+                 float: left;
+                 width: 35%;
+                 height: auto;
+                 margin: 15px;
+                 margin-right: 5px;
+                 border-radius: 20px;
+                 box-shadow: 0 0 10px grey;
+            }
+            .shape {
+              float: right;
+              width: 700px;
+              height: 300px;
+              background-color:antiquewhite;
+              color: black;
+              display: flex;
+              justify-content: center;
+             align-items: center;
+             text-align: center;
+             border-radius: 15px;
+             box-shadow: 0 4px 8px grey;
+            }
+            .text-align{
+                text-align: right;
+                padding: 0%;
+                margin: 0%;
+            }
+            .Github-benifits li {
+             margin-bottom: 5px;
+            }
+            @media only screen and (max-width: 620px) {
+            .image, .rectangle, .list-of-benifits{ width:100%}
+          }
+            
     
         </style>
     </head>
    <body>
       <header>
-          <h1>PowerBI within a Business Sector</h1>
+          <nav >
+            <a href="#">Home</a>
+            
+          </nav>
       </header>
-      <h1> Benefits of PowerBI compared to traditional methods</h1>
+      <h1 id="myHeader">Benefits of PowerBI compared to traditional methods</h1>
       <div class="PBI-benifits">
       <img src="PBI_img.png" alt="PBI" class="img">
       </div>
@@ -67,8 +123,8 @@
         spreadsheets (Cymetrix 2023). This can be very time-consuming considering that trends and patterns from the data have
         to be manually identified.</p>
         <div class="rectangle">
-          <h2>Specific benefits of implementing Power BI when analysing data:</h2>
-          <br>
+          <h2>Specific benefits of implementing Power BI when analysing data</h2>
+          
            <ul class="list-of-benifits">
              <li>Data visualization</li>
              <li>Data connectivity</li>
@@ -83,6 +139,31 @@
              <li>Customization and extensions</li>
              <li>Cost-Effectiveness</li>
            </ul>
-        </div>   
+        </div> 
+  </body>
+  <body>
+    <h1 id="header2">Benifits of Github and how it can be used effectively</h1>
+    <div class="Github-benifits">
+        <img src="php.png" alt="Github" class="pic">
+    </div>
+    <p class="teect-align">
+        Github is a plaform primarily utilised for collaborative coding and its features allow for effective coding when working within a group enviroment. This is displayed through the various tools offered by Github that enhance collaboration and managment from all individuals woking together during the development process of the software.
+         Issues tool wihtin Github allow individuals keep track of any bugs that had occured wihtin during the devlopment process of the code. The next effective tool is referred to as the pull requests tool.
+         The major benifit of utilising this tool within a group enviroment is that it allows the collaborators to receive feedback as well as address some issues. 
+    </p>
+    <div class="shape">
+        <h2>Specific benefits of Github</h2>
+        
+         <ul class="Github-benifits">
+           <li>Markdown</li>
+           <li>Integration options</li>
+           <li>Real-time dashboards</li>
+           <li>Tracking changes within code</li>
+           <li>Repository</li>
+           <li>Documentation</li>
+         </ul>
+      </div> 
+
+
   </body>
 </html>
