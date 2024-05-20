@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shopping Data Analysis</title>
+    <title>PowerBi Configuring Steps</title>
     <style>
         body {
             background-color: lightgray;
@@ -11,18 +11,18 @@
             padding: 0;
         }
         nav {
-            background-color: black;
+            background-color:aquamarine ;
             color: white;
             padding: 10px 20px;
             text-align: center;
         }
         h1 {
-            color: darkslategray;
+            color:black;
             padding: 20px;
             margin: 20px;
         }
         h2 {
-            color: darkslategrey;
+            color:black;
             padding: 20px;
             margin: 20px;
         }
@@ -43,7 +43,7 @@
     <p>The dataset is loosely based on the shopping details for customers of a few cities. The values vary profoundly which makes it simple and basic to reproduce any kind of visualization based on it. The data has been populated randomly and holds no relation to any real systems data or confidential data. It is particularly useful for those new to data analysis, providing a basic dataset to build simple models and visualizations using tools like Python or Power BI.</p>
     <p>This dataset includes 2 files: one contains the entire data for customer shopping while the other file has indexed data based on a matrix according to the cities.</p>
     <a href="https://www.kaggle.com/datasets/bikram1505/shopping-data?resource=download">Download Dataset</a>
-    
+
     <h1 id="transformation">Transforming Raw Data Into Meaningful Insights</h1>
     <h2>Using Microsoft Excel</h2>
     <ol>
@@ -67,4 +67,71 @@
         </li>
     </ol>
 </body>
+</head>
+<body>
+    <header>
+        <h1>Power BI Dashboard Tutorial</h1>
+    </header>
+    
+        <h2>Step 1: Load the Data into Power BI</h2>
+        <ol>
+            <li>Open Power BI Desktop.</li>
+            <li>Select 'Get Data' from the Home ribbon and choose 'Excel'.</li>
+            <li>Navigate to your file, select it, and then load it.</li>
+            <li>Choose the sheet that contains your data and click 'Load'.</li>
+        </ol>
+    
+            <h2>Step 2: Create Visuals</h2>
+        
+            <h3>Visual 1: Distribution of Customers by Age and Gender</h3>
+            <p>Visualization Type: Stacked bar chart</p>
+            <ul>
+                <li>Axis: Customer Age (grouped by range, e.g., 20-30, 30-40, etc.)</li>
+                <li>Legend: Customer Gender</li>
+                <li>Value: Count of Customer ID</li>
+                <img src="stacked bar chart .png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Visual 2: Average Annual Income by City and Gender</h3>
+            <p>Visualization Type: Clustered column chart</p>
+            <img src="Clustered Column Chart.png" alt="Descriptive text about the image" width="800" height="300">
+        
+            <h3>Visual 3: Relationship Between Credit Score and Spending Score</h3>
+            <p>Visualization Type: Scatter chart</p>
+            <ul>
+                <li>Axis X: Credit Score</li>
+                <li>Axis Y: Spending Score</li>
+                <li>Legend: Optional (can be Customer Gender or Customer City)</li>
+                <img src="scatter chart.png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Visual 4: Count of Customer ID by City</h3>
+            <p>Visualization Type: Pie Chart</p>
+            <ul>
+                <li>Legend: City</li>
+                <li>Values: Count of Customer ID</li>
+                <img src="pie chart.png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Visual 5: Customer Distribution by City and Gender</h3>
+            <p>Visualization Type: Matrix</p>
+            <ul>
+                <li>Rows: City ID</li>
+                <li>Columns: Gender</li>
+                <li>Values: Average of Spending Score and Count of Customer ID</li>
+                
+                <img src="Matrix .png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Final Visual:</h3>
+            
+            <img src="Final Visual.png" alt="Descriptive text about the image" width="800" height="300">
+            <p>This is how we configured our dashboard. </p>
+
+    
+    <footer>
+        <p>© 2024 Dashboard Tutorial. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 </html>
