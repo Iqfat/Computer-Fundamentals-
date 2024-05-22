@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Transformation - PowerBi Configuring Steps</title>
+    <link rel="stylesheet" href="powerbi.css">
+</head>
+<body>
+    <header>
+        <h1>Transforming Raw Data Into Meaningful Insights</h1>
+    </header>
+    <nav class="menu">
+        <a href="Home.html">Home</a> |
+        <a href="dataset.html">Dataset Information</a> |
+        <a href="transformation.html">Data Transformation</a> |
+        <a href="analysis.html">Analysis</a>
+    </nav>
+    <div>
+        <h2>Using Microsoft Excel</h2>
+        <ol>
+            <li><strong>Open Excel:</strong> Start Excel and open a new blank workbook.</li>
+            <li><strong>Import the CSV File:</strong>
+                <ul>
+                    <li>Go to the Data tab.</li>
+                    <li>Click on 'Get External Data', then select 'From Text' (in newer versions, you might find 'From Text/CSV').</li>
+                    <li>Browse to your CSV file and select it.</li>
+                    <li>Excel will open a wizard or a preview pane where you can specify import settings such as the delimiter (commonly a comma for CSV files).</li>
+                    <li>After setting your preferences, click 'Load' or 'Finish' to import the CSV data into the Excel sheet.</li>
+                </ul>
+            </li>
+            <li><strong>Save as Excel Workbook:</strong>
+                <ul>
+                    <li>After the CSV data is loaded, go to File > Save As.</li>
+                    <li>Choose the location where you want to save the file.</li>
+                    <li>From the 'Save as type' dropdown menu, select 'Excel Workbook (*.xlsx)'.</li>
+                    <li>Click 'Save'.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div id="transformation">
+        <h1>Transforming Raw Data Into Meaningful Insights</h1>
+        <h2>Using Microsoft Excel</h2>
+        <ol>
+            <li><strong>Open Excel:</strong> Start Excel and open a new blank workbook.</li>
+            <li><strong>Import the CSV File:</strong>
+                <ul>
+                    <li>Go to the Data tab.</li>
+                    <li>Click on 'Get External Data', then select 'From Text' (in newer versions, you might find 'From Text/CSV').</li>
+                    <li>Browse to your CSV file and select it.</li>
+                    <li>Excel will open a wizard or a preview pane where you can specify import settings such as the delimiter (commonly a comma for CSV files).</li>
+                    <li>After setting your preferences, click 'Load' or 'Finish' to import the CSV data into the Excel sheet.</li>
+                </ul>
+            </li>
+            <li><strong>Save as Excel Workbook:</strong>
+                <ul>
+                    <li>After the CSV data is loaded, go to File > Save As.</li>
+                    <li>Choose the location where you want to save the file.</li>
+                    <li>From the 'Save as type' dropdown menu, select 'Excel Workbook (*.xlsx)'.</li>
+                    <li>Click 'Save'.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+   
+    </header>
+        <h2>Step 1: Load the Data into Power BI</h2>
+        <ol>
+            <li>Open Power BI Desktop.</li>
+            <li>Select 'Get Data' from the Home ribbon and choose 'Excel'.</li>
+            <li>Navigate to your file, select it, and then load it.</li>
+            <li>Choose the sheet that contains your data and click 'Load'.</li>
+        </ol>
+    
+            <h2>Step 2: Create Visuals</h2>
+        
+            <h3>Visual 1: Distribution of Customers by Age and Gender</h3>
+            <p>Visualization Type: Stacked bar chart</p>
+            <ul>
+                <li>Axis: Customer Age (grouped by range, e.g., 20-30, 30-40, etc.)</li>
+                <li>Legend: Customer Gender</li>
+                <li>Value: Count of Customer ID</li>
+                <img src="stacked bar chart .png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Visual 2: Average Annual Income by City and Gender</h3>
+            <p>Visualization Type: Clustered column chart</p>
+            <img src="Clustered Column Chart.png" alt="Descriptive text about the image" width="800" height="300">
+        
+            <h3>Visual 3: Relationship Between Credit Score and Spending Score</h3>
+            <p>Visualization Type: Scatter chart</p>
+            <ul>
+                <li>Axis X: Credit Score</li>
+                <li>Axis Y: Spending Score</li>
+                <li>Legend: Optional (can be Customer Gender or Customer City)</li>
+                <img src="scatter chart.png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Visual 4: Count of Customer ID by City</h3>
+            <p>Visualization Type: Pie Chart</p>
+            <ul>
+                <li>Legend: City</li>
+                <li>Values: Count of Customer ID</li>
+                <img src="pie chart.png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Visual 5: Customer Distribution by City and Gender</h3>
+            <p>Visualization Type: Matrix</p>
+            <ul>
+                <li>Rows: City ID</li>
+                <li>Columns: Gender</li>
+                <li>Values: Average of Spending Score and Count of Customer ID</li>
+                
+                <img src="Matrix .png" alt="Descriptive text about the image" width="800" height="300">
+            </ul>
+        
+            <h3>Final Visual:</h3>
+            
+            <img src="Final Visual.png" alt="Descriptive text about the image" width="800" height="300">
+            <p>This is how we configured our dashboard. </p>
+
+        </div> 
+    <footer>
+        <p>© 2024 Dashboard Tutorial. All rights reserved.</p>
+    </footer>
+</body>
